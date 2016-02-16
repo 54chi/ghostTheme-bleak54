@@ -5,12 +5,14 @@ Contrary to popular belief, this theme is not a modified bleak theme, but an ext
 The source can be downloaded from [here](http://github.com/54chi/bleak-54)
 You can see this theme running at [54chi.com](http://54chi.com)
 
+![Screenshot](/screenshots/home.png?raw=true "Bleak-54")
+
 # Credits
 
 - Casper theme for [Ghost](http://github.com/tryghost/ghost/) can be found under the Ghost's [releases](https://github.com/TryGhost/Casper/releases) page.
 - The cover video, as well as the HTML code for it, were downloaded from [Coverr](http://www.coverr.co/)
 - For the navigation transition effect, I was planned to use the [PageStackNavigation](https://github.com/codrops/PageStackNavigation) as a base, but ended up using a simpler (and faster) CSS
-- The comics were taken from my [codrops](http://codepen.io/mochiron/pen/QyJVrZ), with SVG for the characters from [Hand Drawn Goods](http://handdrawngoods.com/)
+- The comics were taken from [54chi's Codepen](http://codepen.io/mochiron/pen/QyJVrZ), with SVG for the characters from [Hand Drawn Goods](http://handdrawngoods.com/)
 
 ## Copyright & License
 

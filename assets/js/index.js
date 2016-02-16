@@ -1,5 +1,5 @@
 /**
- * Main JS file for Casper+54 behaviours
+ * Main JS file for Bleakr+54 behaviours
  */
 
 
@@ -55,17 +55,6 @@
 
         $(this).width(videoWidth).height(videoHeight);
 
-         //check the videoAspectRatio against the window dimmensions
-/*
-         $(this).width(windowWidth);
-          if(windowWidth < 1000){
-             videoHeight = windowHeight;
-             videoWidth = videoHeight / videoAspectRatio;
-             $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-
-             $(this).width(videoWidth).height(videoHeight);
-         }
-*/
          $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
      });
@@ -104,8 +93,6 @@
         });
 
     });
-
-
 
     // Arctic Scroll by Paul Adam Davis
     // https://github.com/PaulAdamDavis/Arctic-Scroll
