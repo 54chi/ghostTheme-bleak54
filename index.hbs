@@ -1,0 +1,59 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+<!-- Full screen video from coverr -->
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="/assets/cover/mp4/cover.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="/assets/cover/webm/cover.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="/assets/cover/snapshot/cover.jpg" alt="Cover Snapshot">
+        </div>
+    </div>
+</div>
+
+{{! The big featured header }}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.navigation}}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+
+      {{#if @blog.logo}}
+    		<a class="image-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" /></a>
+    	{{else}}
+    	    <a class="logo" href="/">
+    	        GhosToro<span>ghost theme</span>
+    	    </a>
+        {{/if}}
+        <div class="main-header-content inner">
+            <h2 class="page-description">{{@blog.description}}</h2>
+        </div>
+
+    </div>
+</header>
+
+<main class="content" role="main" style="display:none">
+
+    {{#foreach posts}}
+
+    <article class="preview">
+        <header>
+            <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+            <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt}}&hellip;</p>
+            <p class="readmore"><a href="{{url}}">Continue reading <span class="ion-arrow-right-c"></span></a></p>
+        </section>
+    </article>
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</main>
